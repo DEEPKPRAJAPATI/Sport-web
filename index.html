@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: url(white3.avif);
+      background-size: cover;
+      background-position: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style: italic;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 50px;
+    }
+
+    .success {
+      text-align: center;
+      line-height: 1.7;
+      font-size: 25.5px;
+    }
+
+    .img1 {
+      width: 100%;
+      height: 500px;
+      border-radius: 20px;
+    }
+
+    .img1text {
+      position: absolute;
+      top: 32%;
+      left: 5%;
+      color: aliceblue;
+      font-size: 25px;
+    }
+
+    .thanks {
+      text-align: center;
+      font-size: 50px;
+      margin-top: 50px;
+    }
+
+    .videotext {
+      line-height: 1.7;
+      font-size: 17.5px;
+      font-weight: bold;
+    }
+
+    video {
+      max-width: 100%;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar using Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SPORT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="exam1.html">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container text-center mt-5">
+    <h1 class="header">SPORT</h1>
+    <h2 class="success">
+      Successful case studies will help you really change and improve!<br>
+      Take a clear and systematic approach to improve your techniques.<br>
+      Learn from best practice examples with unlimited access to dozens<br>
+      of case studies
+    </h2>
+  </div>
+
+  <!-- Image and Text Section -->
+  <div class="position-relative">
+    <img class="img1" src="sport01.jpg" alt="Sport Image">
+    <div class="img1text">
+      <p>We’re passionate about empowering athletes<br>
+        with top-quality gear and<br>
+        cutting-edge technology.<br>
+        Join us in the pursuit of excellence<br>
+        and performance, on and off the field!</p>
+    </div>
+  </div>
+
+  <div class="container text-center my-4">
+    <p class="text1">
+      "Elevate your game with our expert training,<br>
+      personalized coaching, and top-notch equipment<br>
+      to unlock your full athletic potential!"
+    </p>
+  </div>
+
+  <!-- Video Section -->
+  <div class="container d-flex flex-column flex-lg-row align-items-center">
+    <div class="videotext mb-3 mb-lg-0">
+      <p>Sport training is a systematic process<br>
+        aimed at enhancing athletic performance through a combination<br>
+        of physical conditioning, skill development, and mental preparation.<br>
+        It typically involves a well-structured regimen that includes various<br>
+        workouts, drills, and practice sessions tailored to an athlete's specific sport.<br>
+        Effective training not only focuses on strength, endurance, and agility but also<br>
+        emphasizes recovery and injury prevention. Mental strategies like visualization<br>
+        and goal setting are key for maintaining focus and resilience.
+      </p>
+    </div>
+    <video width="500" height="450" controls>
+      <source src="sport02.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Thanks Section -->
+  <div class="thanks">
+    <h1>Thanks for visiting</h1>
+  </div>
+
+  <!-- Bootstrap JS (Optional for responsive functionality) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

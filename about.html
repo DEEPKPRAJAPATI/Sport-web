@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About us</title>
+
+<style>
+    body{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        min-height: 100vh;
+        background: url(img2.webp);
+        background-size: cover;
+        background-position: center;
+        color: black;
+        font-size: large;
+        font-style: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        font-size: 30px;
+
+    }
+
+    .btn{
+        background: black;
+        color: aliceblue;
+        border-radius: 5px;
+    }
+
+    .container{
+        width: 700px;
+        
+       }
+
+    h1{
+        color: black;
+        text-decoration: underline;
+    }   
+    
+    .container p{
+        line-height: 1.4;
+        color: whitesmoke;
+    }
+
+    #check{
+        display: none;
+    }
+
+    .content{
+        display: none;
+        transition: 0.5s linear;
+    }
+    
+    label{
+        color: aliceblue;
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: underline;
+    }
+
+    #check:checked ~ .content{
+        display: block;
+    }
+
+    #check:checked ~ label{
+        visibility: hidden;
+
+    }
+
+    #check:checked ~ label::after{
+        content:"Show Less";
+        display: block;
+        visibility: visible;
+    }
+
+</style>
+</head>
+<body>
+    
+    <div class="container">
+    <input type="checkbox" id="check">
+    <h1>About Us:</h1>
+        <P>
+        He was an expert but not in a discipline that anyone could fully appreciate.<br>
+         He knew how to hold the cone just right so that the soft server ice-cream fell<br>
+        into it at the precise angle to form a perfect cone each and every time.<br>
+         It had taken years to perfect and he could now do it without even putting any thought behind it.<br>
+         Nobody seemed to fully understand the beauty of this accomplishment except for the new worker who watched in amazement.
+        </P>
+
+        <p>
+            Sleep deprivation causes all sorts of challenges and problems.<br>
+            When one doesn’t get enough sleep one’s mind doesn’t work clearly.<br>
+            Studies have shown that after staying awake for 24 hours one’s ability <br>
+            to do simple math is greatly impaired. Driving tired has been shown to be<br> 
+            as bad as driving drunk.
+        </p>
+
+        <div class="content">
+        <p>
+        You can decide what you want to do in life, but I suggest doing something that creates.<br>
+         Something that leaves a tangible thing once you're done. That way even after you're gone,<br>
+          you will still live on in the things you created.
+        </p>
+    </div>
+        <label for="check">Read More</label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <form method="post" action="index.html" onsubmit="return va()">
+                    <h1> LOGIN PAGE</h1>
+                    <div class="input-box">
+                        <input id="n1" type="text" placeholder="Username">   
+                    </div>
+
+                    <div class="input-box">
+                        <input id="n2" type="password" placeholder="Password">
+                    </div>
+
+                    <div class="forget">
+                        <input type="checkbox">Remind me
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                        <a href="forget.html">Forget password..?</a>
+                    </div>
+                    <br>
+                    
+                    <button type="submit" class="btn" onclick="va()">Login</button>
+                    
+
+                    <div class="register">
+                        <P>if dont have an account then..? <a href="exam2.html">register</a></P>
+                    </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    function va(){
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("n2").value;
+
+        if(a=="" || b=="")
+        {
+            alert("All filed are required");
+            return false;
+        }
+        else if(b.length>6 || b.length<6)
+        {
+            alert("Password must be 6 letter");
+            return false;
+        }
+        else if(isNaN(b))
+        {
+            alert("Only Number allow in password");
+            return false;
+        }
+        else
+        {
+            alert("thanks for joning us..");
+            return true;
+        }
+    }
+</script>
+</html>

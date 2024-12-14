@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="containar">
+        <div class="main">
+            <form method="post" action="exam1.html" onsubmit="return v()">
+                
+                <h1>Register</h1>
+                
+                <div class="input-box">
+                    <input id="n1" type="text" placeholder="Username">    
+                </div>
+                
+                <div class="input-box">
+                    <input id="n3" type="text" placeholder="Mobile Number">
+                </div>
+
+                <div class="input-box">
+                    <input id="n2" type="password" placeholder="Set password">
+                </div>
+
+                <input class="btn" type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript">
+        function v(){
+            var a=document.getElementById("n1").value;
+            var b=document.getElementById("n2").value;
+            var c=document.getElementById("n3").value;
+            
+            
+
+            if(a=="" || b=="" || c=="")
+            {
+            alert("All fileds are required");
+            return false;
+            }
+            else if(b.length<6 || b.length>6)
+            {
+                alert("Password must be 6 letter");
+                return false;
+            }
+            else if(isNaN(b) || isNaN(c))
+            {
+                alert("Number only");
+                return false;
+            }
+            else if(c.length>10 || c.length<10)
+            {
+                alert("Mobile number  must be 10 letter");
+                return false;
+            }
+            else
+            {
+            return true;
+            }
+        }
+    </script>
+</html>
